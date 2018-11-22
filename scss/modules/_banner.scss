@@ -1,0 +1,62 @@
+//Banner
+
+.banner {
+	width: 100%;
+	height: 20em;
+	background-image: url('../../assets/images/banner-image-1.jpg');
+	display: flex;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	justify-content: center;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1;
+	}
+
+	&-inner {
+		position: relative;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+		align-self: center;
+
+		h1 {
+			font-weight: 900;
+			margin: 0;
+			margin-bottom: .25em;
+			@include textShadow;
+		}
+
+		h2 {
+			font-weight: 300;
+			margin: 0;
+			@include textShadow;
+		}
+
+		.banner-button {
+			width: 15em;
+			height: 2.5em;
+			line-height: 2.5em;
+			border: 1px #909090 solid;
+			background-color: rgba(0,0,0,0.5);
+			margin: auto;
+			margin-top: 2em;
+			border-radius: 5px;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,2 @@
+$(function(){var n=$(".header").data("nav");$(".header-inner i").on("click",function(){"closed"==n&&($("nav").addClass("open-nav"),n="open")}),$("nav i").on("click",function(){"open"==n&&($("nav").removeClass("open-nav"),n="closed")})});
+//# sourceMappingURL=scripts.js.map
