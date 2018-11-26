@@ -1,0 +1,46 @@
+.partner-item {
+	text-align: center;
+	padding: 2.5em 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	width: 80%;
+	margin: 0 auto;
+
+	&-image {
+		width: 60%;
+		margin: 0 auto;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&-blurb {
+		padding: 1em 0;
+		margin: 0 auto;
+
+		 p {
+		 	font-weight: 300;
+		 }
+	}
+
+	&-button {
+		border: 1px solid rgba(0,0,0,0.15);
+		border-radius: 5px;
+		width: 15em;
+		height: 2em;
+		margin: 0 auto;
+
+		a {
+			line-height: 2em;
+			display: block;
+			color: rgba(0,0,0,0.7);
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+	}
+
+	&:last-child {
+		border: none;
+	}
+}
