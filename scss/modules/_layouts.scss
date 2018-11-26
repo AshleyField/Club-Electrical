@@ -1,4 +1,33 @@
 section {
 	min-height: 80vh;
-	padding: 1em;
+	padding: 2.5em 1em;
+	display: flex;
+
+	.section-inner {
+		align-self: center;
+	}
+}
+.grey-section {
+	background-color: rgba(0,0,0,0.03);
+}
+
+.section-header {
+
+	text-align: center;
+
+	h1 {
+		font-size: 2em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.sub-heading {
+		font-weight: 300;
+		font-size: 1.25em;
+
+		a {
+			color: $ce-blue;
+			text-decoration: underline;
+		}
+	}
 }

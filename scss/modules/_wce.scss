@@ -1,0 +1,27 @@
+//Why Club Electrical
+
+.wce-item {
+	text-align: center;
+	padding: 2.5em 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	width: 80%;
+	margin: 0 auto;
+
+	.icon {
+		width: 20%;
+		margin: 0 auto;
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.wce-heading {
+		text-transform: uppercase;
+	}
+
+	.wce-blurb {
+		font-weight: 300;
+	}
+}
