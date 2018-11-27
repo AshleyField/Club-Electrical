@@ -100,3 +100,76 @@
 		}
 	}
 }
+
+#desktop-nav {
+	display: none;
+}
+
+@media only screen and (min-width : 60em){
+	#mobile-nav{
+		display: none;
+	}
+
+	.header-inner {
+		i {
+			display: none;
+		}
+
+		.logo {
+			width: 15em;
+		}
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+
+		#desktop-nav {
+			vertical-align: center;
+			display: flex;
+			ul {
+				display: flex;
+				flex: 1 0 90%;
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				align-self: center;
+
+				li {
+					margin-right: .75em;
+					font-weight: 300;
+
+					a {
+						transition: .5s ease all;
+						&:hover {
+							color: $ce-blue;
+						}
+					}
+				}
+
+				.login {
+					i {
+						margin-left: .5em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 80em){
+	.header {
+		padding: 1em 3em;
+		#desktop-nav {
+			ul {
+				li {
+					margin-right: 1.5em;
+
+					a {
+						font-size: 1.25em;
+					}
+				}
+			}
+		}
+	}
+}

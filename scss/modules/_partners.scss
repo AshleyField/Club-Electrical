@@ -8,6 +8,7 @@
 	&-image {
 		width: 60%;
 		margin: 0 auto;
+		max-width: 12em;
 
 		img {
 			display: block;
@@ -37,6 +38,55 @@
 			color: rgba(0,0,0,0.7);
 			text-transform: uppercase;
 			font-weight: 300;
+		}
+	}
+}
+
+#our-parters {
+	.col-container {
+		.col-4-item:last-child {
+			.partner-item {
+				border: none;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 40em){
+	#our-parters {
+		.col-container {
+			.col-4-item:nth-last-child(2) {
+				.partner-item {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.partner-item {
+		border: none;
+		display: flex;
+		flex-direction: column;
+
+		&-image, &-button {
+			flex: 0 0 auto;
+		}
+
+		&-blurb {
+			flex: 1 0 auto;
+		}
+
+		&-button {
+			transition: .5s ease all;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.9);
+				a {
+					color: #fff;
+				}
+			}
 		}
 	}
 }

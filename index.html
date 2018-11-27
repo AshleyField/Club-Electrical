@@ -17,14 +17,14 @@
 	<div class="wrapper">
 
 		<div class="header" data-nav="closed">
-			<div class="header-inner">
+			<div class="header-inner" id="pre-header">
 				<i class="fas fa-bars"></i>
 				<div class="logo">
 					<img src="assets/images/club-electrical-logo.png" alt="">
 				</div>
 				
 			</div>
-			<nav>
+			<nav id="mobile-nav">
 				<div class="header-inner">
 					<i class="fas fa-times"></i>
 					<div class="logo">
@@ -33,15 +33,25 @@
 				</div>
 				
 				<ul>
-					<li>Partners</li>
-					<li>Training</li>
-					<li>Member Benefits</li>
-					<li>Become A Member</li>
-					<li>Contact</li>
-					<li class="login">Login<i class="fas fa-user"></i></li>
+					<li><a href="">Partners</a></li>
+					<li><a href="">Training</a></li>
+					<li>Member Benefits</li></li>
+					<li><a href="">Become A Member</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="login"><a href="">Login<i class="fas fa-user"></i></a></li>
 				</ul>
 			</nav>
 			<div class="overlay"></div>
+			<div id="desktop-nav">
+				<ul>
+					<li><a href="">Partners</a></li>
+					<li><a href="">Training</a></li>
+					<li><a href="">Member Benefits</a></li>
+					<li><a href="">Become A Member</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="login"><a href="">Login<i class="fas fa-user"></i></a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="banner">
 			<div class="banner-inner">
@@ -61,7 +71,7 @@
 					</h2>
 				</div>
 				<div class="col-container">
-					<div class="4-col-item">
+					<div class="col-4-item" id="test">
 						<div class="partner-item">
 							<div class="partner-item-image">
 								<img src="assets/images/schneider-electric-logo.png" alt="" class="partner-logo">
@@ -74,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="4-col-item">
+					<div class="col-4-item">
 						<div class="partner-item">
 							<div class="partner-item-image">
 								<img src="assets/images/simx-logo.png" alt="" class="partner-logo">
@@ -87,7 +97,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="4-col-item">
+					<div class="col-4-item">
 						<div class="partner-item">
 							<div class="partner-item-image">
 								<img src="assets/images/alliance-logo.png" alt="" class="partner-logo">
@@ -100,7 +110,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="4-col-item">
+					<div class="col-4-item">
 						<div class="partner-item">
 							<div class="partner-item-image">
 								<img src="assets/images/prolux-logo.png" alt="" class="partner-logo">
@@ -125,7 +135,7 @@
 					</h2>
 				</div>
 				<div class="col-container">
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/network-icon.png" alt="">
@@ -136,7 +146,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/group-buying-icon.png" alt="">
@@ -147,7 +157,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/training-icon.png" alt="">
@@ -158,7 +168,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/franchisee-icon.png" alt="">
@@ -169,7 +179,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/scnheider-icon.png" alt="">
@@ -180,7 +190,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="3-col-item">
+					<div class="col-3-item">
 						<div class="wce-item">
 							<div class="icon">
 								<img src="assets/images/software-icon.png" alt="">
@@ -201,7 +211,7 @@
 					<h1>Become a member</h1>
 				</div>
 				<div class="col-container">
-					<div class="2-col-item">
+					<div class="col-2-item">
 						<div class="bam-item">
 							<p class="bam-blurb">
 								You can signup to become a member for only $xx per month. you can visit our <a href="">signup page</a> to become a member and seek all of our member benefits.
@@ -212,7 +222,7 @@
 						</div>
 						
 					</div>
-					<div class="2-col-item">
+					<div class="col-2-item">
 						<div class="bam-item">
 							<p class="bam-blurb">
 								Want to find out more about what you get with becoming a member? Take a look at our <a href="">members benefits page</a> to find out more.
@@ -227,7 +237,7 @@
 			</div>
 		</section>
 
-		<section id="contact-form">
+		<section id="contact-form" class="grey-section">
 			<div class="section-inner">
 				<div class="section-header">
 					<h1>Have a question?</h1>

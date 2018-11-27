@@ -31,3 +31,43 @@ section {
 		}
 	}
 }
+
+.section-inner {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 40em){
+	.col-container {
+		display: flex;
+		flex-wrap: wrap;
+
+		.col-4-item {
+			flex: 1 0 45%;
+		}
+
+		.col-3-item {
+			flex: 1 0 45%;
+		}
+
+		.col-2-item {
+			flex: 1 0 90%;
+		}
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.col-container {
+		.col-4-item {
+			flex: 1 0 20%;
+		}
+
+		.col-3-item {
+			flex: 1 0 30%;
+		}
+
+		.col-2-item {
+			flex: 1 0 45%;
+		}
+	}
+}
