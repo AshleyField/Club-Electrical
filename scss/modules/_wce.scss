@@ -25,3 +25,31 @@
 		font-weight: 300;
 	}
 }
+
+#why-club-electrical {
+	.col-3-item:last-child {
+		.wce-item {
+			border: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 40em){
+	#why-club-electrical {
+		.col-3-item:nth-last-child(2) {
+			.wce-item {
+				border: none;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 60em){
+	#why-club-electrical {
+		.col-3-item:nth-last-child(3) {
+			.wce-item {
+				border: none;
+			}
+		}
+	}
+}

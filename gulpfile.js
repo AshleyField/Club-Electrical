@@ -17,7 +17,7 @@ gulp.task('sass', function () {
 	    cascade: false
 	}))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('.'))
     .pipe(browserSync.stream());
 });
 
