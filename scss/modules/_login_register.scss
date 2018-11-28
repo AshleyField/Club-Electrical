@@ -1,0 +1,152 @@
+//Login & Register Page
+
+#login-page {
+	.section-inner {
+		align-self: flex-start;
+	}
+}
+
+.login-right {
+	margin-top: 4em;
+
+	.login-form-container {
+
+		.login-login {
+			form {
+				.login-username, .login-password, .login-submit {
+					label {
+						display: block;
+						margin-bottom: .5em;
+						font-weight: 300;
+						font-size: .75em;
+					}
+
+					input {
+						border: 1px rgba(0,0,0,0.2) solid;
+						border-radius: 5px;
+						width: 100%;
+						outline: 0;
+						height: 3em;
+						padding-left: 1em;
+						box-sizing: border-box;
+					}
+				}
+
+				.login-remember {
+					label {
+						font-weight: 300;
+						font-size: .75em;
+					}
+				}
+			}
+		}
+
+		.login-register {
+			form {
+				ul {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+					margin-top: 1em;
+
+					li {
+						margin: .5em 0;
+					}
+				}
+
+				label {
+					display: block;
+					margin-bottom: .5em;
+					font-weight: 300;
+					font-size: .75em;
+				}
+
+				input {
+					border: 1px rgba(0,0,0,0.2) solid;
+					border-radius: 5px;
+					width: 100%;
+					outline: 0;
+					height: 3em;
+					padding-left: 1em;
+					box-sizing: border-box;
+				}
+
+				.pms-field-subscriptions {
+					div {
+						display: flex;
+
+						label {
+							font-weight: 400;
+							font-size: 1em;
+							margin-right: .25em;
+						}
+					}
+				}
+			}
+
+			.login-remember {
+				label {
+					font-weight: 300;
+					font-size: .75em;
+				}
+			}
+		}
+	}
+}
+
+.login-buttons {
+	display: flex;
+
+	&-register, &-login {
+		flex: 1 0 45%;
+		text-align: center;
+		border-radius: 5px;
+		border: $ce-blue 2px solid;
+
+		p {
+			color: $ce-blue;
+		}
+		
+	}
+
+	&-register {
+		margin-left: .5em;
+	}
+
+	&-login {
+		margin-right: .5em;
+	}
+
+	.active-button {
+		background-color: $ce-blue;
+
+		p {
+			color: #fff;
+		}
+	}
+}
+
+.hide-login {
+	display: none;
+}
+
+@media only screen and (min-width: 60em){
+	.login-wrapper {
+		display: flex;
+
+		.login-right, .login-left {
+			flex: 1 0 45%;
+			padding: 1em;
+		}
+
+		.login-right {
+			margin: 0;
+		}
+
+		.login-left {
+			h1 {
+				margin-top: 0;
+			}
+		}
+	}
+}

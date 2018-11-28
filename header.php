@@ -45,7 +45,7 @@
 					<li>Member Benefits</li></li>
 					<li><a href="/register">Become A Member</a></li>
 					<li><a href="">Contact</a></li>
-					<li class="login"><a href="">Login<i class="fas fa-user"></i></a></li>
+					<li class="login"><a href="/login">Login<i class="fas fa-user"></i></a></li>
 				</ul>
 			</nav>
 			<div class="overlay"></div>
@@ -56,7 +56,7 @@
 					<li><a href="">Member Benefits</a></li>
 					<li><a href="/register">Become A Member</a></li>
 					<li><a href="">Contact</a></li>
-					<li class="login"><a href="">Login<i class="fas fa-user"></i></a></li>
+					<li class="login"><a href="/login">Login<i class="fas fa-user"></i></a></li>
 				</ul>
 			</div>
 		</div>

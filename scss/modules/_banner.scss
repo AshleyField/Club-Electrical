@@ -61,9 +61,49 @@
 	}
 }
 
+.page-banner {
+	width: 100%;
+	height: 10em;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1;
+	}
+
+	.page-banner-inner {
+		align-self: center;
+		z-index: 10;
+
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			color: #fff;
+			@include textShadow;
+			font-weight: 900;
+
+		}
+	}
+}
+
 @media only screen and (min-width: 40em) {
 	.banner {
 		height: 25em;
+	}
+
+	.page-banner {
+		height: 15em;
 	}
 }
 
@@ -90,6 +130,15 @@
 				a {	
 					font-size: 1.25em;
 				}	
+			}
+		}
+	}
+
+	.page-banner {
+
+		.page-banner-inner {
+			h1 {
+				font-size: 2.5em;
 			}
 		}
 	}
