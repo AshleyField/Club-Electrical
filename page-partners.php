@@ -9,9 +9,9 @@
 		while ( have_posts() ) {
 			the_post(); ?>
 
-			<section>
+			<section class="grey-section">
 				<div class="section-inner">
-					<div class="section-heading">
+					<div class="section-header">
 						<h1><?php the_title(); ?></h1>
 					</div>
 					<div class="section-content">
@@ -34,7 +34,39 @@
 							<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 						<?php endif; ?>
 
+					</div>
+
+				</div>
+				
+			</section>
+
+			<section>
+				<div class="section-inner">
+					<div class="section-header">
+						<h1><?php the_title(); ?></h1>
+					</div>
+
 					<div class="col-container">
+
+						<?php
+
+							// The Query
+
+							$args = array('post_type'=>'partner_products');
+							$the_query = new WP_Query( $args );
+
+							// The Loop
+
+							while ( $the_query->have_posts() ) {
+								$the_query->the_post();
+								
+								get_template_part('content','partner-products');
+							}
+
+							/* Restore original Post Data */
+							wp_reset_postdata();
+						?>
+					</div>
 
 				</div>
 				

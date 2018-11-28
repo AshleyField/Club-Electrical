@@ -9,7 +9,7 @@
 
 			<section>
 				<div class="section-inner">
-					<div class="section-heading">
+					<div class="section-header">
 						<h1><?php the_title(); ?></h1>
 					</div>
 					<div class="section-content">

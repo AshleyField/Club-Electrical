@@ -27,6 +27,19 @@
 			'menu_icon'   => 'dashicons-tagcloud',
 		);
 		register_post_type('benefits',$arg);
+
+		//Register Partner Products
+		$arg = array(
+			'labels' => array(
+				'name'=> 'Partner Products',
+				'singular_name' => 'Partner Product',
+				'menu_name' => 'Partner Products'
+			),
+			'public' => true,
+			'show_in_nav_menues' => true,
+			'menu_icon'   => 'dashicons-tagcloud',
+		);
+		register_post_type('partner_products',$arg);
 	}
 
 	add_action('init','register_resources');
