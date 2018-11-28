@@ -13,3 +13,27 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+
+.cart-contents:before {
+    font-family:WooCommerce;
+    content: "\e01d";
+    font-size:28px;
+    margin-top:10px;
+    font-style:normal;
+    font-weight:400;
+    padding-right:5px;
+    vertical-align: bottom;
+}
+.cart-contents:hover {
+    text-decoration: none;
+}
+.cart-contents-count {
+    color: #fff;
+    background-color: $ce-blue;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 1px 6px;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+}

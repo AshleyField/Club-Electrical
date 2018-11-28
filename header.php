@@ -40,23 +40,53 @@
 				</div>
 				
 				<ul>
-					<li><a href="">Partners</a></li>
-					<li><a href="">Training</a></li>
-					<li>Member Benefits</li></li>
-					<li><a href="/register">Become A Member</a></li>
+					<li><a href="/partners">Partners</a></li>
+					<li><a href="/training">Training</a></li>
+					<li><a href="/member-benefits">Member Benefits</a></li></li>
+					<li><a href="/shop">Become A Member</a></li>
 					<li><a href="">Contact</a></li>
-					<li class="login"><a href="/login">Login<i class="fas fa-user"></i></a></li>
+					<li class="login"><a href="/my-account">Login<i class="fas fa-user"></i></a></li>
+					<li>
+						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+ 
+						    $count = WC()->cart->cart_contents_count;
+						    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+						    if ( $count > 0 ) {
+						        ?>
+						        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+						        <?php
+						    }
+						        ?></a>
+						 
+						<?php } ?>
+
+					</li>
 				</ul>
 			</nav>
 			<div class="overlay"></div>
 			<div id="desktop-nav">
 				<ul>
-					<li><a href="">Partners</a></li>
-					<li><a href="">Training</a></li>
-					<li><a href="">Member Benefits</a></li>
-					<li><a href="/register">Become A Member</a></li>
+					<li><a href="/partners">Partners</a></li>
+					<li><a href="/training">Training</a></li>
+					<li><a href="/member-benefits">Member Benefits</a></li>
+					<li><a href="/shop">Become A Member</a></li>
 					<li><a href="">Contact</a></li>
-					<li class="login"><a href="/login">Login<i class="fas fa-user"></i></a></li>
+					<li class="login"><a href="/my-account">Login<i class="fas fa-user"></i></a></li>
+					<li>
+						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+ 
+						    $count = WC()->cart->cart_contents_count;
+						    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+						    if ( $count > 0 ) {
+						        ?>
+						        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+						        <?php
+						    }
+						        ?></a>
+						 
+						<?php } ?>
+
+					</li>
 				</ul>
 			</div>
 		</div>
