@@ -40,10 +40,10 @@
 				
 			</section>
 
-			<section>
+			<section id="partner-products">
 				<div class="section-inner">
 					<div class="section-header">
-						<h1><?php the_title(); ?></h1>
+						<h1>Partner Products</h1>
 					</div>
 
 					<div class="col-container">

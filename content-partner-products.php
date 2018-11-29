@@ -7,25 +7,25 @@
 		</div>
 		<div class="partner-product-image">
 			<img src="<?php the_field('product_image'); ?>" alt="">
+
+			<?php 
+
+				$partner_relationship = get_field('relationship');
+
+				foreach($partner_relationship as $relationship){
+					?>
+					<div class="partner-product-logo">
+						<img src="<?php the_field('partner_logo',$relationship->ID); ?>" alt="">
+					</div>
+
+					<?php
+				}
+
+			?>
+		
 		</div>
 		<div class="partner-product-description">
 			<?php the_content(); ?>
-		</div>
-		<div class="partner-product-logo">
-			<?php 
-
-				$posts = get_field('relationship');
-
-				if( $posts ): ?>
-					<?php foreach( $posts as $post): 
-
-						setup_postdata($post); ?>
-
-						 <img src="<?php the_field('partner_logo'); ?>" alt="">
-
-					<?php endforeach;
-					wp_reset_postdata(); 
-				endif; ?>
 		</div>
 		
 		<?php if(get_field('product_link')): ?>

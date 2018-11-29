@@ -42,6 +42,21 @@
 			}
 		}
 	}
+
+	.wce-item {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		box-sizing: border-box;
+
+		.icon, .wce-heading {
+			flex: 0 0 auto;
+		}
+
+		.wce-blurb {
+			flex: 1 0 auto;
+		}
+	}
 }
 
 @media only screen and (min-width: 60em){

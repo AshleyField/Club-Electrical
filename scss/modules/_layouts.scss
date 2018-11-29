@@ -5,6 +5,7 @@ section {
 
 	.section-inner {
 		align-self: center;
+		width: 100%;
 	}
 }
 .grey-section {
@@ -42,17 +43,18 @@ section {
 	.col-container {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 
 		.col-4-item {
-			flex: 1 0 45%;
+			flex: 0 0 45%;
 		}
 
 		.col-3-item {
-			flex: 1 0 45%;
+			flex: 0 0 45%;
 		}
 
 		.col-2-item {
-			flex: 1 0 90%;
+			flex: 0 0 90%;
 		}
 	}
 }
@@ -60,15 +62,15 @@ section {
 @media only screen and (min-width: 60em){
 	.col-container {
 		.col-4-item {
-			flex: 1 0 20%;
+			flex: 0 0 20%;
 		}
 
 		.col-3-item {
-			flex: 1 0 30%;
+			flex: 0 0 30%;
 		}
 
 		.col-2-item {
-			flex: 1 0 45%;
+			flex: 0 0 45%;
 		}
 	}
 }

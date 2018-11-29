@@ -28,8 +28,10 @@
 
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post();
-							
-							get_template_part('content','partners');
+
+							if((get_field('show_on_homepage')== "Yes")){
+								get_template_part('content','partners');
+							}
 						}
 
 						/* Restore original Post Data */
