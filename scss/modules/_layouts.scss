@@ -26,6 +26,8 @@ section {
 	.sub-heading {
 		font-weight: 300;
 		font-size: 1.25em;
+		max-width: 70%;
+		margin: 0 auto;
 
 		a {
 			color: $ce-blue;

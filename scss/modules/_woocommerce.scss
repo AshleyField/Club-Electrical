@@ -48,6 +48,39 @@
 	}
 }
 
+//Cart Count for Navigation
+
+.cart-contents {
+	position: relative;
+}
+
+.cart-contents:before {
+    font-family:WooCommerce;
+    content: "\e01d";
+    font-size:28px;
+    margin-top:10px;
+    font-style:normal;
+    font-weight:400;
+    padding-right:5px;
+    vertical-align: bottom;
+}
+.cart-contents:hover {
+    text-decoration: none;
+}
+.cart-contents-count {
+	position: absolute;
+	top: -15px;
+	right: -5px;
+    color: #fff;
+    background-color: $ce-blue;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 1px 6px;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+}
+
 //Checkout
 .woocommerce-checkout {
 	.woocommerce-billing-fields {
@@ -63,7 +96,7 @@
 			padding: .5em 1em;
 		}
 
-		#billing_company_field, #billing_country_field, #billing_address_1_field, #billing_address_2_field, #billing_city_field, #billing_state_field, #billing_postcode_field, #billing_phone_field, #billing_email_field {
+		#billing_last_name_field, #billing_first_name_field, #billing_company_field, #billing_country_field, #billing_address_1_field, #billing_address_2_field, #billing_city_field, #billing_state_field, #billing_postcode_field, #billing_phone_field, #billing_email_field {
 			display: flex;
 			flex-wrap: wrap;
 
@@ -87,6 +120,25 @@
 
 		.woocommerce-input-wrapper {
 			flex: 1 0 90%;
+		}
+
+		textarea {
+			border-radius: 5px;
+			outline: none;
+			border: #E5E3E7 solid 1px;
+			padding: .5em 1em;
+		}
+	}
+
+	.select2-dropdown {
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	}
+
+	//Remove outline from select dropdown
+
+	.select2-search {
+		input {
+			outline: none !important;
 		}
 	}
 }
@@ -118,6 +170,43 @@
 
 		span {
 			font-weight: 300;
+		}
+	}
+}
+
+//Product Grid
+
+.products {
+	margin-top: 2em !important;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.product {
+	border: 1px rgba(0,0,0,0.1) solid;
+	padding: 1em !important;
+	border-radius: 5px;
+	float: left !important;
+	flex: 1 0 90%;
+	box-sizing: border-box;
+	margin: 1em !important;
+	max-width: 20em;
+}
+
+@media only screen and (min-width: 40em){
+	.product {
+		flex: 0 0 45%;
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.products {
+		display: flex;
+		justify-content: space-between;
+
+		.product {
+			flex: 0 0 30%;
 		}
 	}
 }
