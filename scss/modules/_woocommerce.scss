@@ -48,6 +48,15 @@
 	}
 }
 
+.woocommerce-cart-form {
+
+	//Remove coupon area from cart page.
+	.coupon {
+		display: none;
+	}
+}
+
+
 //Cart Count for Navigation
 
 .cart-contents {
