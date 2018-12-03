@@ -11,7 +11,7 @@
 			),
 			'public' => true,
 			'show_in_nav_menues' => true,
-			'menu_icon' => 'dashicons-list-view',
+			'menu_icon' => 'dashicons-groups',
 		);
 		register_post_type('partners',$arg);
 
@@ -24,7 +24,7 @@
 			),
 			'public' => true,
 			'show_in_nav_menues' => true,
-			'menu_icon'   => 'dashicons-tagcloud',
+			'menu_icon'   => 'dashicons-thumbs-up',
 		);
 		register_post_type('benefits',$arg);
 
@@ -37,7 +37,7 @@
 			),
 			'public' => true,
 			'show_in_nav_menues' => true,
-			'menu_icon'   => 'dashicons-tagcloud',
+			'menu_icon'   => 'dashicons-cart',
 		);
 		register_post_type('partner_products',$arg);
 	}

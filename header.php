@@ -40,12 +40,12 @@
 				</div>
 				
 				<ul>
-					<li><a href="/partners">Partners</a></li>
-					<li><a href="/training">Training</a></li>
-					<li><a href="/member-benefits">Member Benefits</a></li></li>
-					<li><a href="/shop">Become A Member</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li class="login"><a href="/my-account">Login<i class="fas fa-user"></i></a></li>
+					<li><a href="/partners" <?php if(is_page('partners')){ echo 'class="active"'; };  ?>>Partners</a></li>
+					<li><a href="/training" <?php if(is_page('training')){ echo 'class="active"'; };  ?>>Training</a></li>
+					<li><a href="/member-benefits" <?php if(is_page('member-benefits')){ echo 'class="active"'; };  ?>>Member Benefits</a></li></li>
+					<li><a href="/shop" <?php if(is_page('shop')){ echo 'class="active"'; };  ?>>Become A Member</a></li>
+					<li><a href="/contact" <?php if(is_page('contact')){ echo 'class="active"'; };  ?>>Contact</a></li>
+					<li class="login"><a href="/my-account" <?php if(is_page('my-account')){ echo 'class="active"'; };  ?>>Login<i class="fas fa-user"></i></a></li>
 					<li>
 						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
  
@@ -66,12 +66,12 @@
 			<div class="overlay"></div>
 			<div id="desktop-nav">
 				<ul>
-					<li><a href="/partners">Partners</a></li>
-					<li><a href="/training">Training</a></li>
-					<li><a href="/member-benefits">Member Benefits</a></li>
-					<li><a href="/shop">Become A Member</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li class="login"><a href="/my-account">Login<i class="fas fa-user"></i></a></li>
+					<li><a href="/partners" <?php if(is_page('partners')){ echo 'class="active"'; };  ?>>Partners</a></li>
+					<li><a href="/training" <?php if(is_page('training')){ echo 'class="active"'; };  ?>>Training</a></li>
+					<li><a href="/member-benefits" <?php if(is_page('member-benefits')){ echo 'class="active"'; };  ?>>Member Benefits</a></li>
+					<li><a href="/shop" <?php if(is_page('shop')){ echo 'class="active"'; };  ?>>Become A Member</a></li>
+					<li><a href="/contact" <?php if(is_page('contact')){ echo 'class="active"'; };  ?>>Contact</a></li>
+					<li class="login"><a href="/my-account" <?php if(is_page('my-account')){ echo 'class="active"'; };  ?>>Login<i class="fas fa-user"></i></a></li>
 					<li>
 						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
  
