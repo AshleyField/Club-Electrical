@@ -180,5 +180,16 @@
 
 	.partner-product {
 		border: none;
+
+		&-button {
+			transition: .5s ease all;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.9);
+				a {
+					color: #fff;
+				}
+			}
+		}
 	}
 }

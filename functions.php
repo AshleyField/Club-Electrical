@@ -137,7 +137,6 @@ function mytheme_customize_css()
 
              .grey-section {
              	background-color: <?php echo get_theme_mod('even_section_colour', '#EFEFEF'); ?>!important;
-             	border:1px red solid;
              }
          </style>
     <?php
