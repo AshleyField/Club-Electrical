@@ -4,7 +4,7 @@
 				<h1><?php the_field('banner_heading'); ?></h1>
 				<h2><?php the_field('banner_subheading'); ?></h2>
 				<div class="banner-button">
-					<a href="<?php the_field('banner_button_url'); ?>"><?php the_field('banner_button_text'); ?></a>
+					<a href="<?php the_field('banner_button_url');?>"><?php the_field('banner_button_text'); ?></a>
 				</div>
 			</div>
 		</div>

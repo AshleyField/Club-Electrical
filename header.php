@@ -24,7 +24,7 @@
 				<i class="fas fa-bars"></i>
 				<div class="logo">
 					<a href="/">
-						<img src="<?php echo get_bloginfo('template_directory');?>/assets/images/club-electrical-logo.png" alt="">
+						<img src="<?php echo get_theme_mod('logo_setting',get_bloginfo('template_directory').'/assets/images/club-electrical-logo.png'); ?>" alt="">
 					</a>
 				</div>
 				
