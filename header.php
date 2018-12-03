@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Home - Club Electrical</title>
+	<title><?php the_title(); ?> - Club Electrical</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
