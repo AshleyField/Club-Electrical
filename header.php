@@ -46,7 +46,7 @@
 					<li><a href="/shop" <?php if(is_page('shop')){ echo 'class="active"'; };  ?>>Become A Member</a></li>
 					<li><a href="/contact" <?php if(is_page('contact')){ echo 'class="active"'; };  ?>>Contact</a></li>
 					<li class="login"><a href="/my-account" <?php if(is_page('my-account')){ echo 'class="active"'; };  ?>>Login<i class="fas fa-user"></i></a></li>
-					<li>
+					<li id="cart-area">
 						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
  
 						    $count = WC()->cart->cart_contents_count;

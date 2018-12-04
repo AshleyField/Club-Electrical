@@ -56,6 +56,14 @@
 	}
 }
 
+#cart-area {
+	margin-left: .5em;
+
+	&:before {
+		content: '';
+	}
+}
+
 
 //Cart Count for Navigation
 

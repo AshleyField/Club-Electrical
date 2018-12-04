@@ -83,7 +83,7 @@
 								You can signup to become a member for only $xx per month. you can visit our <a href="">signup page</a> to become a member and seek all of our member benefits.
 							</p>
 							<div class="bam-button">
-								<a href="">Become a member</a>
+								<a href="/shop">Become a member</a>
 							</div>
 						</div>
 						
@@ -94,7 +94,7 @@
 								Want to find out more about what you get with becoming a member? Take a look at our <a href="">members benefits page</a> to find out more.
 							</p>
 							<div class="bam-button">
-								<a href="">View member benefits</a>
+								<a href="/member-benefits">View member benefits</a>
 							</div>
 						</div>
 						
